@@ -48,14 +48,60 @@ export default function Header() {
               aria-hidden="true"
             >
               <rect width="32" height="32" rx="7" fill="#E3B93C" />
-              <ellipse cx="9" cy="15.5" rx="5.5" ry="3.2" fill="white" fillOpacity="0.82" transform="rotate(-20 9 15.5)" />
-              <ellipse cx="23" cy="15.5" rx="5.5" ry="3.2" fill="white" fillOpacity="0.82" transform="rotate(20 23 15.5)" />
+              <ellipse
+                cx="9"
+                cy="15.5"
+                rx="5.5"
+                ry="3.2"
+                fill="white"
+                fillOpacity="0.82"
+                transform="rotate(-20 9 15.5)"
+              />
+              <ellipse
+                cx="23"
+                cy="15.5"
+                rx="5.5"
+                ry="3.2"
+                fill="white"
+                fillOpacity="0.82"
+                transform="rotate(20 23 15.5)"
+              />
               <ellipse cx="16" cy="21" rx="5.5" ry="7" fill="#1D1D1B" />
-              <rect x="10.5" y="18.5" width="11" height="2.5" rx="1.25" fill="#E3B93C" />
-              <rect x="11.5" y="22.5" width="9" height="2" rx="1" fill="#E3B93C" />
+              <rect
+                x="10.5"
+                y="18.5"
+                width="11"
+                height="2.5"
+                rx="1.25"
+                fill="#E3B93C"
+              />
+              <rect
+                x="11.5"
+                y="22.5"
+                width="9"
+                height="2"
+                rx="1"
+                fill="#E3B93C"
+              />
               <circle cx="16" cy="11.5" r="4" fill="#1D1D1B" />
-              <line x1="14" y1="8.5" x2="11" y2="4.5" stroke="#1D1D1B" strokeWidth="1.5" strokeLinecap="round" />
-              <line x1="18" y1="8.5" x2="21" y2="4.5" stroke="#1D1D1B" strokeWidth="1.5" strokeLinecap="round" />
+              <line
+                x1="14"
+                y1="8.5"
+                x2="11"
+                y2="4.5"
+                stroke="#1D1D1B"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              />
+              <line
+                x1="18"
+                y1="8.5"
+                x2="21"
+                y2="4.5"
+                stroke="#1D1D1B"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              />
               <circle cx="10.5" cy="4" r="1.4" fill="#1D1D1B" />
               <circle cx="21.5" cy="4" r="1.4" fill="#1D1D1B" />
             </svg>
@@ -71,7 +117,7 @@ export default function Header() {
                 key={l.href}
                 href={l.href}
                 style={{ color: "var(--charcoal)" }}
-                className="text-sm font-medium hover:opacity-60 transition-opacity"
+                className="honey-link text-sm font-medium"
               >
                 {l.label}
               </Link>

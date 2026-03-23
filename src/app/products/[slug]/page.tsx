@@ -81,7 +81,10 @@ const BENEFIT_SECTIONS = [
 const ACCORDION_ITEMS = [
   { q: "Features", a: PRODUCT_DETAILS.features.join(" · ") },
   { q: "Materials", a: PRODUCT_DETAILS.materials.join(" · ") },
-  { q: "Fit & sizing", a: "True to size with a relaxed body. Measure your chest and compare to the size chart before ordering." },
+  {
+    q: "Fit & sizing",
+    a: "True to size with a relaxed body. Measure your chest and compare to the size chart before ordering.",
+  },
   { q: "Care instructions", a: PRODUCT_DETAILS.care.join(" · ") },
   { q: "Shipping & returns", a: PRODUCT_DETAILS.shipping.join(" · ") },
 ];
@@ -116,7 +119,10 @@ export default async function ProductDetailPage({ params }: Props) {
                     className="img-placeholder rounded-lg cursor-pointer"
                     style={{
                       aspectRatio: "1/1",
-                      border: i === 0 ? "2px solid var(--charcoal)" : "2px solid transparent",
+                      border:
+                        i === 0
+                          ? "2px solid var(--charcoal)"
+                          : "2px solid transparent",
                     }}
                   >
                     <span className="text-[9px] opacity-30">Photo</span>
@@ -150,7 +156,10 @@ export default async function ProductDetailPage({ params }: Props) {
               <div
                 key={i}
                 className="flex gap-5 items-start p-5 rounded-xl"
-                style={{ backgroundColor: "var(--cream)", border: "1px solid var(--border)" }}
+                style={{
+                  backgroundColor: "var(--cream)",
+                  border: "1px solid var(--border)",
+                }}
               >
                 <div
                   className="img-placeholder rounded-lg shrink-0"
@@ -159,10 +168,16 @@ export default async function ProductDetailPage({ params }: Props) {
                   <span className="text-[10px] opacity-30">Photo</span>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold" style={{ color: "var(--charcoal)" }}>
+                  <p
+                    className="text-sm font-semibold"
+                    style={{ color: "var(--charcoal)" }}
+                  >
                     {b.heading}
                   </p>
-                  <p className="text-xs mt-1 leading-relaxed" style={{ color: "var(--gray-mid)" }}>
+                  <p
+                    className="text-xs mt-1 leading-relaxed"
+                    style={{ color: "var(--gray-mid)" }}
+                  >
                     {b.body}
                   </p>
                 </div>
@@ -181,8 +196,15 @@ export default async function ProductDetailPage({ params }: Props) {
             </h2>
             <div className="flex items-center gap-1.5">
               <span className="stars text-sm">★★★★★</span>
-              <span className="text-sm font-semibold" style={{ color: "var(--charcoal)" }}>5.0</span>
-              <span className="text-xs" style={{ color: "var(--gray-mid)" }}>(48 reviews)</span>
+              <span
+                className="text-sm font-semibold"
+                style={{ color: "var(--charcoal)" }}
+              >
+                5.0
+              </span>
+              <span className="text-xs" style={{ color: "var(--gray-mid)" }}>
+                (48 reviews)
+              </span>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">

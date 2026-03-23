@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BeeCursor from "@/components/BeeCursor";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={geist.variable}>
       <body>
+        <BeeCursor />
         <Header />
         <main>{children}</main>
         <Footer />

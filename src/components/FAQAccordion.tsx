@@ -12,7 +12,10 @@ interface FAQAccordionProps {
   dark?: boolean;
 }
 
-export default function FAQAccordion({ items, dark = false }: FAQAccordionProps) {
+export default function FAQAccordion({
+  items,
+  dark = false,
+}: FAQAccordionProps) {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
@@ -53,7 +56,9 @@ export default function FAQAccordion({ items, dark = false }: FAQAccordionProps)
           {open === i && (
             <p
               className="text-sm leading-relaxed pb-5 pr-8"
-              style={{ color: dark ? "rgba(255,255,255,0.65)" : "var(--gray-mid)" }}
+              style={{
+                color: dark ? "rgba(255,255,255,0.65)" : "var(--gray-mid)",
+              }}
             >
               {item.a}
             </p>

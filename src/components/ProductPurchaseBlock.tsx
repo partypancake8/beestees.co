@@ -38,21 +38,35 @@ export default function ProductPurchaseBlock({
         <h1 className="display-md" style={{ color: "var(--charcoal)" }}>
           {name}
         </h1>
-        <p className="text-xl font-semibold mt-1" style={{ color: "var(--charcoal)" }}>
+        <p
+          className="text-xl font-semibold mt-1"
+          style={{ color: "var(--charcoal)" }}
+        >
           ${price}
         </p>
       </div>
 
       {/* Description */}
-      <p className="text-sm leading-relaxed" style={{ color: "var(--gray-mid)" }}>
+      <p
+        className="text-sm leading-relaxed"
+        style={{ color: "var(--gray-mid)" }}
+      >
         {description}
       </p>
 
       {/* Color */}
       <div>
-        <p className="text-xs font-semibold mb-2.5 tracking-wide uppercase"
-          style={{ color: "var(--charcoal)" }}>
-          Color — <span className="normal-case font-normal" style={{ color: "var(--gray-mid)" }}>{selectedColor}</span>
+        <p
+          className="text-xs font-semibold mb-2.5 tracking-wide uppercase"
+          style={{ color: "var(--charcoal)" }}
+        >
+          Color —{" "}
+          <span
+            className="normal-case font-normal"
+            style={{ color: "var(--gray-mid)" }}
+          >
+            {selectedColor}
+          </span>
         </p>
         <div className="flex gap-2">
           {COLORS.map((c) => (
@@ -68,9 +82,7 @@ export default function ProductPurchaseBlock({
                     ? "2.5px solid var(--charcoal)"
                     : "1.5px solid var(--border)",
                 outline:
-                  selectedColor === c.name
-                    ? "2px solid var(--cream)"
-                    : "none",
+                  selectedColor === c.name ? "2px solid var(--cream)" : "none",
                 outlineOffset: "1px",
               }}
             />
@@ -81,11 +93,16 @@ export default function ProductPurchaseBlock({
       {/* Size */}
       <div>
         <div className="flex items-center justify-between mb-2.5">
-          <p className="text-xs font-semibold tracking-wide uppercase"
-            style={{ color: "var(--charcoal)" }}>
+          <p
+            className="text-xs font-semibold tracking-wide uppercase"
+            style={{ color: "var(--charcoal)" }}
+          >
             Size
           </p>
-          <button className="text-xs underline" style={{ color: "var(--gray-mid)" }}>
+          <button
+            className="text-xs underline"
+            style={{ color: "var(--gray-mid)" }}
+          >
             Size guide
           </button>
         </div>
@@ -115,7 +132,10 @@ export default function ProductPurchaseBlock({
 
       {/* Quantity */}
       <div className="flex items-center gap-3">
-        <p className="text-xs font-semibold tracking-wide uppercase" style={{ color: "var(--charcoal)" }}>
+        <p
+          className="text-xs font-semibold tracking-wide uppercase"
+          style={{ color: "var(--charcoal)" }}
+        >
           Qty
         </p>
         <div
@@ -150,7 +170,10 @@ export default function ProductPurchaseBlock({
         onClick={handleAdd}
         disabled={!selectedSize}
         className="btn-primary w-full py-4 text-base"
-        style={{ opacity: selectedSize ? 1 : 0.5, cursor: selectedSize ? "pointer" : "not-allowed" }}
+        style={{
+          opacity: selectedSize ? 1 : 0.5,
+          cursor: selectedSize ? "pointer" : "not-allowed",
+        }}
       >
         {added ? "Added to cart ✓" : "Add to cart"}
       </button>
@@ -163,14 +186,23 @@ export default function ProductPurchaseBlock({
       {/* Mission block */}
       <div
         className="rounded-xl p-4 flex gap-3 items-start mt-1"
-        style={{ backgroundColor: "var(--cream)", border: "1px solid var(--border)" }}
+        style={{
+          backgroundColor: "var(--cream)",
+          border: "1px solid var(--border)",
+        }}
       >
         <span className="text-lg shrink-0">🌿</span>
         <div>
-          <p className="text-xs font-semibold" style={{ color: "var(--charcoal)" }}>
+          <p
+            className="text-xs font-semibold"
+            style={{ color: "var(--charcoal)" }}
+          >
             This purchase supports pollinator-positive impact
           </p>
-          <p className="text-xs mt-1 leading-relaxed" style={{ color: "var(--gray-mid)" }}>
+          <p
+            className="text-xs mt-1 leading-relaxed"
+            style={{ color: "var(--gray-mid)" }}
+          >
             A portion of every order contributes to bee and pollinator support
             through Bee&apos;s Tees impact initiatives.
           </p>

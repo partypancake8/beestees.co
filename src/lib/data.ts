@@ -111,8 +111,7 @@ export const COLLECTIONS = [
   {
     slug: "worker-bee-essentials",
     name: "Worker Bee Essentials",
-    description:
-      "The core lineup. No gimmicks. Year-round staples done right.",
+    description: "The core lineup. No gimmicks. Year-round staples done right.",
     productCount: 4,
   },
 ];

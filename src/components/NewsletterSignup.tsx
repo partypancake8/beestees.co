@@ -6,7 +6,9 @@ interface NewsletterSignupProps {
   dark?: boolean;
 }
 
-export default function NewsletterSignup({ dark = false }: NewsletterSignupProps) {
+export default function NewsletterSignup({
+  dark = false,
+}: NewsletterSignupProps) {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
 

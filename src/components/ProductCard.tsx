@@ -7,7 +7,12 @@ interface ProductCardProps {
   badge?: string | null;
 }
 
-export default function ProductCard({ name, price, slug, badge }: ProductCardProps) {
+export default function ProductCard({
+  name,
+  price,
+  slug,
+  badge,
+}: ProductCardProps) {
   return (
     <Link
       href={`/products/${slug}`}
@@ -15,7 +20,10 @@ export default function ProductCard({ name, price, slug, badge }: ProductCardPro
       style={{ color: "var(--charcoal)" }}
     >
       {/* Image */}
-      <div className="relative overflow-hidden rounded-lg mb-3" style={{ aspectRatio: "3/4" }}>
+      <div
+        className="relative overflow-hidden rounded-lg mb-3"
+        style={{ aspectRatio: "3/4" }}
+      >
         <div
           className="img-placeholder w-full h-full transition-transform duration-500 group-hover:scale-105"
           style={{ aspectRatio: "3/4" }}
@@ -25,7 +33,10 @@ export default function ProductCard({ name, price, slug, badge }: ProductCardPro
         {badge && (
           <span
             className="absolute top-3 left-3 text-xs font-semibold tracking-wide px-2.5 py-1 rounded-full"
-            style={{ backgroundColor: "var(--honey)", color: "var(--charcoal)" }}
+            style={{
+              backgroundColor: "var(--honey)",
+              color: "var(--charcoal)",
+            }}
           >
             {badge}
           </span>

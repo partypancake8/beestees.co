@@ -29,8 +29,10 @@ export default function Footer() {
       className="pt-16 pb-8"
     >
       <div className="container-site">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12"
-          style={{ borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
+        <div
+          className="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12"
+          style={{ borderBottom: "1px solid rgba(255,255,255,0.1)" }}
+        >
           {/* Brand */}
           <div className="md:col-span-1">
             <Link
@@ -39,7 +41,10 @@ export default function Footer() {
             >
               Bee&apos;s Tees
             </Link>
-            <p style={{ color: "rgba(255,255,255,0.5)" }} className="text-sm mt-3 leading-relaxed max-w-56">
+            <p
+              style={{ color: "rgba(255,255,255,0.5)" }}
+              className="text-sm mt-3 leading-relaxed max-w-56"
+            >
               Apparel designed to look good, wear well, and support
               pollinator-positive impact.
             </p>
@@ -47,8 +52,10 @@ export default function Footer() {
 
           {/* Shop */}
           <div>
-            <p className="text-xs font-semibold tracking-widest uppercase mb-4"
-              style={{ color: "rgba(255,255,255,0.4)" }}>
+            <p
+              className="text-xs font-semibold tracking-widest uppercase mb-4"
+              style={{ color: "rgba(255,255,255,0.4)" }}
+            >
               Shop
             </p>
             <ul className="flex flex-col gap-2.5">
@@ -68,8 +75,10 @@ export default function Footer() {
 
           {/* Help */}
           <div>
-            <p className="text-xs font-semibold tracking-widest uppercase mb-4"
-              style={{ color: "rgba(255,255,255,0.4)" }}>
+            <p
+              className="text-xs font-semibold tracking-widest uppercase mb-4"
+              style={{ color: "rgba(255,255,255,0.4)" }}
+            >
               Help
             </p>
             <ul className="flex flex-col gap-2.5">
@@ -89,8 +98,10 @@ export default function Footer() {
 
           {/* Connect */}
           <div>
-            <p className="text-xs font-semibold tracking-widest uppercase mb-4"
-              style={{ color: "rgba(255,255,255,0.4)" }}>
+            <p
+              className="text-xs font-semibold tracking-widest uppercase mb-4"
+              style={{ color: "rgba(255,255,255,0.4)" }}
+            >
               Connect
             </p>
             <ul className="flex flex-col gap-2.5">

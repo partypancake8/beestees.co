@@ -7,17 +7,26 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Shop All — Bee's Tees",
-  description: "Browse the full Bee's Tees lineup — tees, hoodies, hats, and accessories built for everyday wear.",
+  description:
+    "Browse the full Bee's Tees lineup — tees, hoodies, hats, and accessories built for everyday wear.",
 };
 
 const FILTERS = ["All", "Tees", "Hoodies", "Hats", "Accessories"];
-const SORTS = ["Best sellers", "New arrivals", "Price: low–high", "Price: high–low"];
+const SORTS = [
+  "Best sellers",
+  "New arrivals",
+  "Price: low–high",
+  "Price: high–low",
+];
 
 export default function ShopAllPage() {
   return (
     <>
       {/* ── Hero Banner ──────────────────── */}
-      <section style={{ backgroundColor: "var(--panel-dark)" }} className="py-20">
+      <section
+        style={{ backgroundColor: "var(--panel-dark)" }}
+        className="py-20"
+      >
         <div className="container-site text-center flex flex-col items-center gap-4">
           <span className="eyebrow" style={{ color: "var(--honey)" }}>
             Bee&apos;s Tees store
@@ -25,14 +34,22 @@ export default function ShopAllPage() {
           <h1 className="display-xl" style={{ color: "#fff" }}>
             Shop all
           </h1>
-          <p className="text-base max-w-md" style={{ color: "rgba(255,255,255,0.5)" }}>
+          <p
+            className="text-base max-w-md"
+            style={{ color: "rgba(255,255,255,0.5)" }}
+          >
             Everything we make — designed to wear well and built with purpose.
           </p>
         </div>
       </section>
 
       {/* ── Filter + Sort Bar ─────────────── */}
-      <section style={{ backgroundColor: "var(--cream)", borderBottom: "1px solid var(--border)" }}>
+      <section
+        style={{
+          backgroundColor: "var(--cream)",
+          borderBottom: "1px solid var(--border)",
+        }}
+      >
         <div className="container-site py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           {/* Filters */}
           <div className="flex items-center gap-2 flex-wrap">
@@ -41,10 +58,12 @@ export default function ShopAllPage() {
                 key={f}
                 className="text-xs font-semibold px-3.5 py-1.5 rounded-full transition-colors"
                 style={{
-                  backgroundColor: f === "All" ? "var(--charcoal)" : "transparent",
+                  backgroundColor:
+                    f === "All" ? "var(--charcoal)" : "transparent",
                   color: f === "All" ? "#fff" : "var(--gray-mid)",
                   border: "1px solid",
-                  borderColor: f === "All" ? "var(--charcoal)" : "var(--border)",
+                  borderColor:
+                    f === "All" ? "var(--charcoal)" : "var(--border)",
                 }}
               >
                 {f}
@@ -93,7 +112,10 @@ export default function ShopAllPage() {
       </section>
 
       {/* ── Mid-page CTA ─────────────────── */}
-      <section style={{ backgroundColor: "var(--panel-dark)" }} className="py-16">
+      <section
+        style={{ backgroundColor: "var(--panel-dark)" }}
+        className="py-16"
+      >
         <div className="container-site flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <span className="eyebrow" style={{ color: "var(--honey)" }}>
@@ -102,12 +124,18 @@ export default function ShopAllPage() {
             <h2 className="display-md mt-2" style={{ color: "#fff" }}>
               Explore the Native Bloom
             </h2>
-            <p className="text-sm mt-2 max-w-sm" style={{ color: "rgba(255,255,255,0.5)" }}>
+            <p
+              className="text-sm mt-2 max-w-sm"
+              style={{ color: "rgba(255,255,255,0.5)" }}
+            >
               Softly saturated tones and botanical motifs from the wildflower
               fields we&apos;re fighting to protect.
             </p>
           </div>
-          <Link href="/collections/native-bloom" className="btn-primary shrink-0">
+          <Link
+            href="/collections/native-bloom"
+            className="btn-primary shrink-0"
+          >
             View collection
           </Link>
         </div>
@@ -135,7 +163,10 @@ export default function ShopAllPage() {
             <h2 className="display-md" style={{ color: "var(--charcoal)" }}>
               Get new drops first
             </h2>
-            <p className="text-sm leading-relaxed" style={{ color: "var(--gray-mid)" }}>
+            <p
+              className="text-sm leading-relaxed"
+              style={{ color: "var(--gray-mid)" }}
+            >
               Sign up and be the first to know about new releases, limited
               drops, and impact updates.
             </p>

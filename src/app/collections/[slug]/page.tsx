@@ -34,7 +34,10 @@ export default async function CollectionDetailPage({ params }: Props) {
   return (
     <>
       {/* ── Collection Hero ──────────────── */}
-      <section style={{ backgroundColor: "var(--panel-dark)" }} className="py-24">
+      <section
+        style={{ backgroundColor: "var(--panel-dark)" }}
+        className="py-24"
+      >
         <div className="container-site">
           <div className="max-w-2xl">
             <span className="eyebrow" style={{ color: "var(--honey)" }}>
@@ -43,7 +46,10 @@ export default async function CollectionDetailPage({ params }: Props) {
             <h1 className="display-xl mt-3" style={{ color: "#fff" }}>
               {collection.name}
             </h1>
-            <p className="text-base mt-4 leading-relaxed" style={{ color: "rgba(255,255,255,0.55)" }}>
+            <p
+              className="text-base mt-4 leading-relaxed"
+              style={{ color: "rgba(255,255,255,0.55)" }}
+            >
               {collection.description}
             </p>
           </div>
@@ -64,20 +70,29 @@ export default async function CollectionDetailPage({ params }: Props) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
               <span className="eyebrow">The curation</span>
-              <h2 className="display-md mt-3" style={{ color: "var(--charcoal)" }}>
+              <h2
+                className="display-md mt-3"
+                style={{ color: "var(--charcoal)" }}
+              >
                 Thoughtfully curated
               </h2>
-              <p className="text-sm leading-relaxed mt-4" style={{ color: "var(--gray-mid)" }}>
+              <p
+                className="text-sm leading-relaxed mt-4"
+                style={{ color: "var(--gray-mid)" }}
+              >
                 Every piece in this collection was selected for its wearability,
-                quality, and connection to the Bee&apos;s Tees mission. These aren&apos;t
-                just clothes — they&apos;re the ones you&apos;ll reach for first.
+                quality, and connection to the Bee&apos;s Tees mission. These
+                aren&apos;t just clothes — they&apos;re the ones you&apos;ll
+                reach for first.
               </p>
             </div>
             <div
               className="img-placeholder rounded-2xl"
               style={{ aspectRatio: "5/3" }}
             >
-              <span className="text-xs opacity-40">Collection detail photo</span>
+              <span className="text-xs opacity-40">
+                Collection detail photo
+              </span>
             </div>
           </div>
         </div>
@@ -120,11 +135,14 @@ export default async function CollectionDetailPage({ params }: Props) {
               <h2 className="display-md" style={{ color: "var(--charcoal)" }}>
                 Every item funds pollinator gardens
               </h2>
-              <p className="text-sm leading-relaxed" style={{ color: "var(--gray-mid)" }}>
+              <p
+                className="text-sm leading-relaxed"
+                style={{ color: "var(--gray-mid)" }}
+              >
                 A portion of each purchase from this collection contributes to
-                pollinator-positive work through Bee&apos;s Tees giving efforts —
-                including urban wildflower corridors and conservation partnership
-                programs.
+                pollinator-positive work through Bee&apos;s Tees giving efforts
+                — including urban wildflower corridors and conservation
+                partnership programs.
               </p>
               <div
                 className="flex items-start gap-3 p-4 rounded-xl mt-2"
@@ -139,7 +157,10 @@ export default async function CollectionDetailPage({ params }: Props) {
                 >
                   🌼
                 </div>
-                <p className="text-xs leading-relaxed" style={{ color: "var(--charcoal)" }}>
+                <p
+                  className="text-xs leading-relaxed"
+                  style={{ color: "var(--charcoal)" }}
+                >
                   <strong>Transparency note:</strong> We publish our impact
                   figures annually. Sign up for the newsletter to get the latest
                   update.
@@ -150,7 +171,9 @@ export default async function CollectionDetailPage({ params }: Props) {
               className="img-placeholder rounded-2xl w-full"
               style={{ aspectRatio: "4/5" }}
             >
-              <span className="text-xs opacity-40">Mission lifestyle photo</span>
+              <span className="text-xs opacity-40">
+                Mission lifestyle photo
+              </span>
             </div>
           </div>
         </div>
@@ -188,13 +211,19 @@ export default async function CollectionDetailPage({ params }: Props) {
       </section>
 
       {/* ── CTA Banner ───────────────────── */}
-      <section style={{ backgroundColor: "var(--panel-dark)" }} className="py-16">
+      <section
+        style={{ backgroundColor: "var(--panel-dark)" }}
+        className="py-16"
+      >
         <div className="container-site flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h2 className="display-md" style={{ color: "#fff" }}>
               Ready to make an impact
             </h2>
-            <p className="text-sm mt-2 max-w-sm" style={{ color: "rgba(255,255,255,0.5)" }}>
+            <p
+              className="text-sm mt-2 max-w-sm"
+              style={{ color: "rgba(255,255,255,0.5)" }}
+            >
               Every piece you wear, every purchase you make — it adds up.
             </p>
           </div>

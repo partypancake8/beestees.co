@@ -18,7 +18,9 @@ export default function TestimonialCard({
       className="rounded-xl p-6 flex flex-col gap-4"
       style={{
         backgroundColor: dark ? "rgba(255,255,255,0.06)" : "var(--white)",
-        border: dark ? "1px solid rgba(255,255,255,0.1)" : "1px solid var(--border)",
+        border: dark
+          ? "1px solid rgba(255,255,255,0.1)"
+          : "1px solid var(--border)",
         color: dark ? "#fff" : "var(--charcoal)",
       }}
     >
@@ -32,7 +34,12 @@ export default function TestimonialCard({
       <div>
         <p className="text-sm font-semibold">{name}</p>
         {product && (
-          <p className="text-xs mt-0.5" style={{ color: dark ? "rgba(255,255,255,0.4)" : "var(--gray-mid)" }}>
+          <p
+            className="text-xs mt-0.5"
+            style={{
+              color: dark ? "rgba(255,255,255,0.4)" : "var(--gray-mid)",
+            }}
+          >
             {product}
           </p>
         )}
